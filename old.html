@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TimeTrackr</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body onload="window_onLoad()">
+    <div class="frame">
+        <div class="header" style="outline: solid; outline-color: black">
+            <div class="userSelect">
+                <form name="form1" id="form1">
+                    User: <select name="dropdownUser" id="dropdownUser">
+                        <option value="" selected="selected">ERROR!</option>
+                    </select>
+                </form>
+            </div>
+            <h1 class="title">TimeTrackr</h1>
+        </div>
+        <div class="content">
+            <div class="left" style="outline: solid; outline-color: black">
+                <div class="userinfo smallBox" style="text-align: center">
+                    <h2>You have currently spent:</h2>
+                    <h1>hh:mm:ss</h1>
+                    <h2>on leisure activities today.</h2>
+                </div>
+                <div class="hueLights largeBox">
+                    <form name="hueLightsForm" id="hueLightsForm">
+                        <h3 style="text-align:center">Hue Lights</h3>
+                        Limit me to
+                        <select name="dropdownLimit" id="dropdownLimit">
+                            <option value="1">1 hours</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4">4 hours</option>
+                            <option value="5" selected="selected">5 hours</option>
+                        </select>
+                        of free time per day.
+                        <input type="checkbox" id="limitDisabled" /> Disable limit
+                        <br />
+                        Warn me at
+                        <select name="dropdownWarn" id="dropdownWarn">
+                            <option value="1">1 hours</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4" selected="selected">4 hours</option>
+                            <option value="5">5 hours</option>
+                        </select>
+                        of free time.
+                        <input type="checkbox" id="warnDisabled" /> Disable warning
+                    </form>
+                </div>
+            </div>
+            <div class="center" style="outline: solid; outline-color: black">
+                <div class="chart">
+                    <img src="images/puppy.jpg" alt="a delightful image of a puppy">
+                </div>
+                <div class="chartKey">
+                    Eventually there will be a pie chart where this delightful image of a puppy is. This text will be replaced by the key.
+                </div>
+            </div>
+            <div class="right" style="outline: solid; outline-color: black">
+                <div class="timeInput smallBox" style="text-align:center">
+                    <h4>Manually enter time spent</h4>
+                    <form name="form2" id="form2">
+                        Time: <input type="text" placeholder="hh:mm:ss" />
+
+
+                    </form>
+                </div>
+                <div class="timer largeBox">
+                    <h3 style="text-align:center" id="timerLabel">Time spent on current task:</h3>
+                    <p style="font-size:x-large;  text-align: center;" id="timer">
+                        <a id="hours">00</a>
+                        <a>:</a>
+                        <a id="minutes">00</a>
+                        <a>:</a>
+                        <a id="seconds">00</a>
+                    </p>
+                    <div style="text-align: center;">
+                        <h4>Keyboard shortcuts:</h4>
+                        <p>
+                            <b>Spacebar:</b> Start/Stop
+                            <br />
+                            <b>Esc:</b> Reset
+                        </p>
+                        <button id="btnStart" onclick="btnStart_onClick()" type="button" style="min-width:65px; width:25%" class="button">Start </button>
+                        <button id="btnResume" onclick="btnResume_onClick()" type="button" hidden style="min-width:65px; width:25%" class="button">Resume</button>
+                        <button id="btnStop" onclick="btnStop_onClick()" type="button" disabled style="min-width:65px; width:25%" class="button">Stop</button>
+                        <br />
+                        <button id="btnReset" onclick="btnReset_onClick()" type="button" disabled style="min-width:65px; width:25%" class="button">Reset</button>
+                        <button id="btnChange" onclick="btnChange_onClick()" disabled style="min-width:65px; width:25%" class="button">Switch task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="outline: solid; outline-color: black">
+            footer
+        </div>
+    </div>
+</body>
+</html>
+<script src="script/index-timer.js"></script>
+<script src="script/index-save.js"></script>
+<script src="script/index-hueLights.js"></script>
+

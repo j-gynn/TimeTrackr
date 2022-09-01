@@ -1,0 +1,19 @@
+﻿#hueWrapper {
+    position:relative;
+}
+
+#hueOnscreen {
+    width: 50%;
+    position: absolute;
+    background-color: green;
+    max-width: 130px;
+    top: 50%;
+    transform: translate(50%, 0);
+}
+
+#hueOnscreen:before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    max-width: 250px;
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Shirley",
+    "leisureLimit": "3",
+    "leisureLimitDisabled":  false,
+    "leisureWarn": "0",
+    "leisureWarnDisabled": false,
+
+    "data": {
+      "0": {
+        "Username": "Shirley",
+        "Application": "Movies/TV",
+        "PlayMins": 320,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "1": {
+        "Username": "Shirley",
+        "Application": "Games",
+        "PlayMins": 55,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "2": {
+        "Username": "Shirley",
+        "Application": "Social Media",
+        "PlayMins": 150,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "3": {
+        "Username": "Shirley",
+        "Application": "Reading",
+        "PlayMins": 500,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "4": {
+        "Username": "Shirley",
+        "Application": "Exercise",
+        "PlayMins": 15,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "5": {
+        "Username": "Shirley",
+        "Application": "Art/Music",
+        "PlayMins": 1855,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "6": {
+        "Username": "Shirley",
+        "Application": "Hobby",
+        "PlayMins": 95,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      },
+      "7": {
+        "Username": "Shirley",
+        "Application": "Other",
+        "PlayMins": 20,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      }
+    }
+  },
+  {
+    "name": "Jason",
+    "leisureLimit": "4",
+    "leisureLimitDisabled":  false,
+    "leisureWarn": "1",
+    "leisureWarnDisabled": false,
+    "data": {
+      "0": {
+        "Username": "Jason",
+        "Application": "Movies/TV",
+        "PlayMins": 20,
+        "Score": 0,
+        "Level": 0,
+        "Date": "2022-01-21"
+      }
+    }
+  },
+
+  {
+    "name": "Erica",
+    "leisureLimit": "3",
+    "leisureLimitDisabled": true,
+    "leisureWarn": "4",
+    "leisureWarnDisabled": true
+  }
+]
